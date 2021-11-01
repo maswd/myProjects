@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan";
+  font-weight: 70;
+}
+
+:root {
+  /* theme 1  */
+  /* background */
+  --t1primarybg: hsl(222, 26%, 31%);
+  --t1secondarybg: hsl(223, 31%, 20%);
+  --t1tertiarybg: hsl(224, 36%, 15%);
+
+  /* key */
+  --t1primary-key: hsl(225, 21%, 49%);
+  --t1secondary-key: hsl(6, 63%, 50%);
+  --t1tertiary-key: hsl(30, 25%, 89%);
+
+  --t1primary-key-shadow: hsl(224, 28%, 35%);
+  --t1secondary-key-shadow: hsl(6, 70%, 34%);
+  --t1tertiary-key-shadow: hsl(28, 16%, 65%);
+
+  /* text */
+  --t1primary-text: hsl(221, 14%, 31%);
+  --t1secondary-text: rgba(255, 255, 255, 1);
+  --t1screen-text: rgba(255, 255, 255, 1);
+
+  /* toggle */
+  --t1togglebg: hsl(223, 31%, 20%);
+  --t1toggle-key: hsl(6, 63%, 50%);
+}
+body {
+  background-color: var(--primarybg);
+}
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.calculator {
+  width: 100%;
+  padding: 1rem;
+  margin: 0 30rem;
+  min-width: 500px;
+  background-color: var(--t1primarybg);
+  border-radius: 0.5rem;
+}
+.display {
+  padding: 2rem 2rem;
+  text-align: right;
+  background-color: var(--t1tertiarybg);
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+  padding: 3rem 0 2rem;
+  font-size: 20px;
+}
+button{
+background-color: --t1primary-key;    
+}
+ .buttons{
+     display: flex;
+ }

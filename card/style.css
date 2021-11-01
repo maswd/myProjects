@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #161621;
+    min-height: 100vh;
+}
+section{
+    position: relative;
+    display: contents;
+    /* padding: 2  00px; */
+}
+section::before{
+    content: '';
+    position: absolute ;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 70%);
+
+}
+section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 10%);
+
+}
+.contianer{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+
+}
+.contianer .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.contianer .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: .5;
+    transition: .5s;
+
+}
+.contianer .card:hover .content{
+    opacity: 1;
+    transform: translateY(-20px);
+
+}
+.contianer .card .content .imgbx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+
+}
+.contianer .card .content .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.contianer .card .content .contentbx h3{
+    color: #fff;
+    text-transform:unset;
+    letter-spacing: 2px;
+    font-weight: 500;    
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em ;    
+    
+}
+.contianer .card .content .contentbx h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+
+}
+.contianer .card .sci{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    right: 86px;
+}
+.contianer .card .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    /* opacity  : 0; */
+    transition: 0.5s;
+    transform:translateY(40px);
+    transition-delay: calc(.1s*var(--i));
+
+}
+
+.contianer .card:hover .sci li{
+    transform: translateY(0px);
+    opacity: 1;     
+
+}
+
+.contianer .card .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+
+
+body > section > div > div:nth-child(n) > ul > li:nth-child(n) > a > i:hover{
+transform: scale(1.1); 
+}

@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: iransans ;
+}
+body{
+    direction: rtl;
+    text-align: right;
+    font-size: 14px;
+    background-color: #f8f9fa;
+
+    box-sizing: border-box;
+    animation-name: example;
+    animation-duration:.3s;
+    animation-fill-mode:none;
+/* animation-delay:; */
+animation-iteration-count: 100000;
+}
+/* @keyframes example {
+    from {background-color:#f8f9fa;}
+    to {background-color: #111;}
+  } */
+  
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section .card{
+    position:absolute;
+    content: '';
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:row ;
+    margin:10px ;
+}
+
+section .card .card1{
+    position: relative;
+    display:flex ;
+    margin: 10px;
+    width: 35%;
+    /* height: 90%; */
+    /* background: #111; */
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: space-between  ;
+    align-content: center;
+}
+
+section .card .card2{
+    position: relative;
+    display:flex ;
+    justify-content: end;
+    width: 50%;
+    height: 90%;
+    /* background: #111; */
+}
+
+
+section .card .card1 .ng{
+    position:relative ;
+    display: flex;
+    justify-content: end;
+    background: rgba(255, 255, 255, 0.2);
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    box-shadow:  0 5px 10px rgba(0,0,0,.175);
+    border: 1px solid  rgba(255, 255, 255, 0.1) ;
+    text-align: center;
+    font-size: 16px;
+    text-align: center;
+
+    
+
+}
+section .card .card1 .ng .ngcontenticon {
+    border: 1px solid rgba(255, 255, 255, 0.2) ;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 2px 10px;
+    text-align: center center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px 5px ;
+    border-radius: 10px;
+
+}
+section .card .card1 button{
+    border: 1px solid rgba(255, 255, 255, 0.2) ;
+    position:relative ;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.7);
+    height: 100px;
+    border-radius: 20px;
+    box-shadow:  0 5px 10px rgba(0,0,0,.175);
+    margin:1.5px;
+    overflow: auto;
+}
+section .card .card1:hover,section .card .card1 button:hover{
+    cursor: pointer;
+
+}
+section .card .card1 .active{
+    position:relative ;
+    display: flex;
+    left: 35px;
+    top: 0;
+    margin: 15px; ;
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow:  0 5px 10px rgba(0,0,0,.175);
+    margin: 10px;
+    transition: .5s ;
+    cursor: pointer;
+}
+section .card .card1 button img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: start;
+
+}
+
+section .card .card1 button  a img,
+section .card .card1 button  a {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    content: "";
+    width: 20px;
+    height: 20px;
+
+}
+section .card .card1 button .tab{
+position: absolute;
+margin-left: 25px;
+}
+
+section .card .card1 button .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+section .card .card1 button .content h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+section .card .card1 button .content h3{
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+section .card .card1 button .content h4{
+    font-size: 12px;
+    font-weight: 100;
+}
+section .card .card1 button .content .discon {
+position: relative;
+/* right: 10%; */
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+/* margin: px 50px; */
+/* text-align: right; */
+margin-top: 5px;
+}
+section .card .card1 button .content .discon .float {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+

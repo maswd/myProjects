@@ -1,0 +1,40 @@
+html{
+    font-size: 16px;
+
+    font-family: "Vazir";
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.form{
+    margin-top: 2rem  ;
+}
+
+.form  .form-tittle{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 1rem;
+
+}
+.form label{
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+}
+.form label,
+.form input{
+    display: block;
+
+}
+.form input.form-contorl{
+    width: 100%;
+    font-family: inherit;
+    padding: 0.6rem .6rem;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+}
+}
+
+ 

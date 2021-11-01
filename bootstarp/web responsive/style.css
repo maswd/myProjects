@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+      
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: #131313;
+    padding: 1rem 8rem;
+    z-index: 1000;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#navbar >ul>li:nth-child(n)>a {
+    /* color: #fff; */
+    font-size: 1.1rem;
+    padding: 0 .8rem;   
+}
+
+#navbar  > ul > li:nth-child(n) > a:hover,
+#navbar  > ul > li:nth-child(n) > a:active{
+    color: #00bf85;
+}   
+#navbar a:active{
+    color: #00bf85; 
+}
+#navbar >button {
+    background: #00bf85;
+    font-weight: 600;
+    padding: .4rem 1.4rem;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+#navbar >button:hover {
+    background: #fff;
+}
+
+.mid {
+    min-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.mid video {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mid .hero {
+    position: relative;
+}
+
+.mid .hero p {
+    width: 56%;
+    font-size: 1rem;
+    letter-spacing: .2px;
+}
+
+.mid .hero a {
+    background: #00bf85;
+    font-weight: 600;
+    padding: .7rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.mid .hero a:hover {
+    background: #fff;
+}
+
+.about {
+    background: #000;
+    z-index: 1000;
+}
+
+.about .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+}
+
+.about .text h6 {
+    color: #00bf85;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about .text h2 {
+    color: #f7f5f4;
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+
+.about .text p {
+    color: #f7f5f4;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: .5px;
+}
+
+.about .text a {
+    background: #00bf85;
+    font-weight: 600;
+    padding: .7rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.about {
+    background: #000;
+    z-index: 1000;
+}
+
+.about .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+}
+
+.about .text h6 {
+    color: #00bf85;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about .text h2 {
+    color: #f7f5f4;
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+
+.about .text p {
+    color: #f7f5f4;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: .5px;
+}
+
+.about .text a {
+    background: #00bf85;
+    font-weight: 600;
+    padding: .7rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.discovery {
+    background: #fff;
+    z-index: 1000;
+}
+
+.discovery .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+}
+
+.discovery .text h6 {
+    color: #00bf85;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.discovery .text h2 {
+    color: #111;
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+
+.discovery .text p {
+    color: #111;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: .5px;
+}
+
+.discovery .text a {
+    background: #111;
+    font-weight: 500;
+    padding: .7rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.black {
+    background: #000;
+}
+
+.card {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}

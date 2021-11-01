@@ -1,0 +1,72 @@
+body{
+    direction: rtl;
+    background-color: #f5f5f5;
+    color:rgb(0, 0, 0);
+    font-family: Tahoma;
+}
+.contanier{
+    margin: 40px auto;
+    max-width: 700px;
+    text-align: center;
+} 
+ul{
+    text-align: right;
+    display: inline-block;
+    list-style: none;
+    padding-left: 0px;
+
+} 
+.menu li {
+    float: right;
+    padding: .6em 1em;
+    border: 1px solid #fff ;
+    background-color: #ffffff;
+    color: #000;
+     position: relative; 
+     border-radius: 5px;
+     transition: .5s;
+     margin: 2px;
+     cursor: pointer;
+    }
+.menu li:hover{
+    background-color: #f70101be;
+    color: #fff;
+
+}
+
+li ul{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    z-index: 1;
+    width: auto;
+    display: none;
+    transition: .5s;
+    text-align: center;
+}
+li ul li{
+    width:100%;
+}
+li:hover ul {
+    display: block;
+}
+li .submenu{
+    position: absolute;
+    z-index: 1;
+    right: 80%;
+    top: 90%;
+    opacity: 0;
+    transition: .1s;
+
+}
+li .sub:hover .submenu{
+    opacity: 1;
+}
+.listitem::after{
+    content: "\25BC";
+    font-size: .8em;
+    padding: 0 2px;
+}
+.sub::after{
+    content: '\27bc';
+}
